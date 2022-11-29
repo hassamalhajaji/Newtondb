@@ -1,0 +1,22 @@
+importOnly
+
+stump
+ div
+  class pldbFooter
+  a NewtonDB
+   href BASE_URL/index.html
+   class logoFont
+  span ·
+  a Traffic Today
+   href
+  span ·
+  a Traffic Trends
+   href
+  span ·
+  a GitHub
+   href https://github.com/hassamalhajaji/Newtondb
+  span ·
+  a manager@Newtondb.com
+   href mailto:
+  span ·
+  span 1-234-567-8910
