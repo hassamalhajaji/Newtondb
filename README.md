@@ -1,6 +1,6 @@
 # NewtonDB: A physics text-to-solution problem solver.
 
-## To build the full site locally
+# To build the full site locally
 
 code
  git clone https://github.com/hassamalhajaji/Newtondb
