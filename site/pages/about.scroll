@@ -1,0 +1,7 @@
+import header.scroll
+title About
+groups index
+
+# _never ever give up_ EVER :)
+
+import ../footer.scroll
