@@ -1,0 +1,7 @@
+importOnly
+
+replaceDefault BASE_URL
+replaceDefault BUILD_URL https://build.newtondb.com
+
+github https://github.com/breck7/CancerDB
+baseUrl https://newtondb.com/

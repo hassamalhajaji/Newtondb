@@ -1,0 +1,41 @@
+importOnly
+import settings.scroll
+
+stump
+ link
+  rel stylesheet
+  type text/css
+  href BASE_URL/scroll.css
+ link
+  rel stylesheet
+  type text/css
+  href BASE_URL/style.css
+ script
+  src BASE_URL/libs.js
+ script
+  src BASE_URL/search.js
+ div
+  class pldbHeader
+  a CancerDB
+   href BASE_URL/index.html
+   class logoFont
+  form
+   style display:inline-block;
+   input
+    type search
+    id headerSearch
+    placeholder Search
+    autocomplete off
+  a Treatments
+   href BASE_URL/lists/treatments.html
+  a Blog
+   href BASE_URL/posts/index.html
+  a About
+   href BASE_URL/pages/about.html
+  a Lists
+   href BASE_URL/lists/lists.html
+  a Sponsor
+   href BASE_URL/pages/sponsor.html
+
+  class gitHubTopRightLinkComponent
+  href https://github.com/hassamalhajaji/Newtondb
