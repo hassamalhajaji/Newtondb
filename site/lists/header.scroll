@@ -1,0 +1,6 @@
+importOnly
+replace BASE_URL ..
+viewSourceBaseUrl https://github.com/hassamalhajaji/Newtondb/new/main/site
+keyboardNav
+baseUrl https://newtondb.com/lists/
+import ../header.scroll
