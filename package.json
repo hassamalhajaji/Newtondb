@@ -1,0 +1,38 @@
+  "name": "NewtonDB",
+  "version": "1.0.0",
+  "description": "Apples and Oranges",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "cd code; tsc; chmod +x test.js",
+    "test": "./code/test.js",
+    "build": "scroll list | scroll build",
+    "open": "open site/index.html",
+    "local": "./code/HealServer.js startDevServer",
+    "deploy": "echo 'Rsyncing site/ to /var/www/html on George'; rsync -vr site/* newtondb.com:/var/www/html/",
+    "restart": "pm2 restart 0",
+    "fire": "npm run build && npm run test && npm run deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassamalhajaji/Newtondb.git"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "keywords": [
+    "cancer",
+    "data"
+  ],
+  "author": "Hassam Alhajaji et al.",
+  "bugs": {
+    "url": "https://github.com/hassamalhajaji/Newtondb/issues"
+  },
+  "homepage": "https://github.com/hassamalhajaji/Newtondb#readme",
+  "dependencies": {
+    "numeral": "^2.0.6",
+    "scroll-cli": "^46.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18"
+  }
+}
