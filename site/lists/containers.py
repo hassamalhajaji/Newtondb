@@ -1,13 +1,16 @@
 #every variable besides derivative
 mechanicsVars = {
 	#lowercase letters
-	"v" : "velocity",
+	"v" : "velocity"
+	"vi" : "initial velocity",
+	"vf" : "final velocity",
 	"a" : "acceleration",
 	"h" : "plancks constant",
 	"m" : "mass",
 	"g" : "gravity",
-	"p" : "momentum",
-	"v" : "velocity",
+	"p" : "momentum"
+	"pi" : "initial velocity",
+	"pf" : "final velocity",
 	"r" : "radius",
 	#uppercase letters
 	"ff" : "force",
@@ -18,7 +21,7 @@ mechanicsVars = {
 	"ll" : "angular momentum",
 	"hh" : "angular impulse",
 	"gg" : "gravitational constant",
-	"tt" : "period of pendulum",
+	"tt" : "Period",
 	#greek letters (U for uppercase, L for lowercase)
 	"alphaL" : "angular acceleration",
 	"tauL" : "torque",
