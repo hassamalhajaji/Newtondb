@@ -49,11 +49,38 @@ mechanicsVars = {
 }
 
 
-#simple harmonic motion acceleration
-#viscous flow
-#continuity equation
-#Instantaneous Acceleration
-#
+
+
+
+def f1(a, b):
+	return a*b
+
+def f2(a, b, c):
+	return a*b*c
+
+def f3(a, b, c, d):
+	return a*b*c*d
+
+def f4(e, f, g):
+	return e+f+g
+
+def f5(e, f, h):
+	return e*f*h
+
+equations = [f1, f2, f3, f4, f5]
+
+input = ["alpha", "bravo"]
+
+
+
+
+
+
+
+
+
+#output
+"force"
 
 
 mechanicsEqs = {}
