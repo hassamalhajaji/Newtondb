@@ -73,7 +73,7 @@ def velocity3(vf, vi, a, t, di):
     return vf
 
 def velocity4(vi, a, di, df):
-    vf^2 = vi^2 + 2*a*(df-di)
+    vf**2 = vi**2 + 2*a*(df-di)
     return vf
 
 def velocityavg(vf, vi, va):
@@ -105,11 +105,11 @@ def frictionkinetic(uk,fn, fs):
     return fk
 
 def cenaccel(v,r,ac):
-    ac = (v^2)/r
+    ac = (v**2)/r
     return ac
 
 def cenaccel2(w,r,ac):
-    ac = (w^2)*r
+    ac = (w**2)*r
     return ac
 
 def momentum(m, a, ff):
@@ -121,7 +121,7 @@ def weight(m, g, wei):
     return wei
 
 def cenaccel(v, r, ac):
-    ac = (v^2)/r
+    ac = (v**2)/r
     return ac
 
 def momentum(m, v, p):
@@ -141,7 +141,7 @@ def workenergy(m, g):
     return en
 
 def kineticenergy(m,v,ke):
-    ke = (1/2)*m*v^2
+    ke = (1/2)*m*v**2
     return ke
 
 def forcepotential(pei,pef,ff):
@@ -181,7 +181,7 @@ def torque(r,ff):
     return tau
 
 def momentofI(ine,m,r):
-    ine = m*r^2
+    ine = m*r**2
     return ine
 
 def workrotation(tau,theta,wwr):
