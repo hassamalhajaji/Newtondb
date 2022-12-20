@@ -4,53 +4,53 @@
 #every variable besides derivative
 mechanicsVars = {
 	#lowercase letters
-    "initial position" : "di",
-    "final position" : "df"
-    "dipslacement" : "d",
-    "height" : "hi"
-    "time" : "t",
-    "velocity" : "v"
-	"initial velocity" : "vi"
-	"final velocity" : "vf",
-    "average velocity" : "va",
-	"acceleration" : "a",
+   	"initial position" : "di",
+   	"final position" : "df"
+    	"dipslacement" : "d",
+    	"height" : "hi"
+    	"time" : "t",
+    	"velocity" : "v",
+    	"initial velocity" : "vi",
+    	"final velocity" : "vf",
+    	"average velocity" : "va",
+    	"acceleration" : "a",
 	"plancks constant" : "h",
-    "angle" : "theta"
+	"angle" : "theta"
 	"mass" : "m",
 	"gravity" : "g",
 	"momentum" : "p",
 	"initial velocity" : "pi",
 	"final velocity" : "pf",
 	"radius" : "r",
-    "impulse" : "imp",
+    	"impulse" : "imp",
 	"force" : "ff",
 	"work" : "ww" ,
-    "rotational work" : "wwr"
-    "rotational power" : "pwr"
-    "rotational kinetic energy" : "ker"
+    	"rotational work" : "wwr"
+    	"rotational power" : "pwr"
+    	"rotational kinetic energy" : "ker"
 	"power" : "pp" ,
 	"inertia" : "ii" ,
 	"angular momentum" : "ll",
 	"angular impulse" : "hh",
-    "angular velocity" : "w"
+    	"angular velocity" : "w"
 	"force of gravity" : "g",
 	"Period": "tt",
-    "weight" : "wei",
-    "energy" : "en",
+    	"weight" : "wei",
+    	"energy" : "en",
 	"final energy" : "enf",
 	"initial energy" : "eni",
-    "coefficient of static friction" : "us",
-    "coefficient of kinetic friction" : "uk",
-    "static force" : "fs",
-    "kinetic force" : "fk",
-    "normal force" : "fn"
-    "centripetal acceleration" : "ac",
-    "angular acceleration" : "alpha",
-    "torque" : "tau",
-    "kinetic energy" : "ke",
-    "initial potential energy":"pei",
-    "final potential energy":"pef",
-    "potential" : "pe",
+    	"coefficient of static friction" : "us",
+    	"coefficient of kinetic friction" : "uk",
+    	"static force" : "fs",
+    	"kinetic force" : "fk",
+    	"normal force" : "fn"
+    	"centripetal acceleration" : "ac",
+    	"angular acceleration" : "alpha",
+    	"torque" : "tau",
+    	"kinetic energy" : "ke",
+    	"initial potential energy":"pei",
+    	"final potential energy":"pef",
+    	"potential" : "pe",
 
 }
 
