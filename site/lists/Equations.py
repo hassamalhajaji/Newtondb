@@ -1,7 +1,5 @@
+################ List of Variables ################
 
-
-
-#every variable besides derivative
 mechanicsVars = {
 	#lowercase letters
    	"initial position" : "di",
