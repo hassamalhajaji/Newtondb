@@ -53,6 +53,66 @@ mechanicsVars = {
 }
 
 
+
+################ List of constants ################ 
+################ http://physics.nist.gov/cuu ################ 
+
+# Speed of light in vacuum
+c = 299792458 ,  # m/s 
+
+# Gravitational constant
+Gc = 6.67430e-11, # N (m**2 / kg**2)
+
+# Planks constant
+h = 6.62607015e-34  # Js
+
+# Dirac constant H bar
+hb = 1.054571817e-34 # Js
+
+# elementray charge 
+e = 1.602176634e-19 # C
+
+# permitivitty of free space 
+e0 = 8.8541878128e-12 # C**2/N m**2
+
+# Fine structure constant 
+fsc = e**2 / (4*pi*e0*hb*c) # approx 1/137
+
+# Bohr magneton
+ub = e*hb / 2*mp
+
+# Rydberg constant 
+rb = fsc**2 *me*c / 2h # 1/m
+
+# Boltzmann constant
+k = 1.380649-23 # J/K
+
+# Avogadro constant
+na = 6.02214076e23 # 1/mol
+
+# Gas Constant
+Rc = na*k # 8.314462618 J/mol K
+
+# Stefan-Boltzmann constant 
+sb = 5.670374419e-8 # W/m**2 K**4
+
+# atomic mass constant
+mu =  1.66053906660e-27 # kg
+
+# electron mass
+me =  9.1093837015e-31 # kg
+
+# proton mass
+mp =  1.66053906660e-27 # kg
+
+# neutron mass
+mn =  1.67492749804e-27 # kg
+
+# luminous efficacy
+kcd = 683 # lm/W
+
+
+
 ################ List of equations ################
 
 def velocity(d, t, v):
