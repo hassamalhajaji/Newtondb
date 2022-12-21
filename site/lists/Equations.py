@@ -15,7 +15,7 @@ mechanicsVars = {
 	"plancks constant" : "h",
 	"angle" : "theta"
 	"mass" : "m",
-	"gravity" : "g",
+	"gravity" : "g", # at surface
 	"momentum" : "p",
 	"initial velocity" : "pi",
 	"final velocity" : "pf",
@@ -42,6 +42,7 @@ mechanicsVars = {
     	"static force" : "fs",
     	"kinetic force" : "fk",
     	"normal force" : "fn"
+	"spring force" : 'fsp"
     	"centripetal acceleration" : "ac",
     	"angular acceleration" : "alpha",
     	"torque" : "tau",
@@ -49,6 +50,12 @@ mechanicsVars = {
     	"initial potential energy":"pei",
     	"final potential energy":"pef",
     	"potential" : "pe",
+	"spring potential" : "ps"
+	"gravatational force" : "fg"
+	"first mass" : "m1", # multibody
+	"second mass" : "m1",
+	"spring constant" : "ks"
+	
 
 }
 
@@ -238,7 +245,7 @@ def torque(r,ff):
     tau = r*ff
     return tau
 
-def momentofI(ine,m,r):
+def momentofI(ine,m,r):	
     ine = m*r**2
     return ine
 
@@ -249,3 +256,28 @@ def workrotation(tau,theta,wwr):
 def powerrotation(tua,w,pwr):
     pwr = tau*w
     return pwr
+
+def gravitationalforce(fg,gc,m1,m2,r):
+    fg = gc*(m1*m2/r**2)
+    return fg
+
+def gravitationalforce(fg,gc,m1,m2,r):
+    fg = gc*(m1*m2/r**2)
+    return fg
+
+def gravitationalfield(gf,gc,m1,m2,r):
+    fg = gc*(m1*m2/r**2)
+    return fg
+		
+def springforce(fsp,ks,d):
+    fsp = -ks*d
+    return fsp
+
+def springpotentiale(ps,d,ks):
+    ps = (1/2)ks*d**2
+    return ps
+
+def sho(tt,m,ks):
+    ps = (1/2)ks*d**2
+    return ps
+	
