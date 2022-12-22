@@ -1,5 +1,7 @@
 ################ List of Variables ################
 
+import math
+
 mechanicsVars = {
 	#lowercase letters
    	"initial position" : "di",
@@ -18,8 +20,8 @@ mechanicsVars = {
 	"mass" : "m",
 	"gravity" : "g", # at surface
 	"momentum" : "p",
-	"initial velocity" : "pi",
-	"final velocity" : "pf",
+	"initial momentum" : "pi",
+	"final momentum" : "pf",
 	"radius" : "r",
     	"impulse" : "imp",
 	"force" : "ff",
@@ -296,7 +298,7 @@ def sho(tt,m,ks):
     return tt
 
 def simplependulum(tt,g,l):
-    tt = 2*pi*sqrt(l/g)
+    tt = 2*math.pi*sqrt(l/g)
     return tt
 
 def frequency(tt):
@@ -304,7 +306,7 @@ def frequency(tt):
     return f
 
 def frequencyangular(f):
-    w = 2*pi*f
+    w = 2*math.pi*f
     return w
 
 def density(m,vol):
