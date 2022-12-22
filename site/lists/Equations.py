@@ -152,7 +152,7 @@ def velocity3(vf, vi, a, t, di):
     return vf
 
 def velocity4(vi, a, di, df):
-    vf**2 = vi**2 + 2*a*(df-di)
+    vf = sqrt(vi**2 + 2*a*(df-di))
     return vf
 
 def velocityavg(vf, vi, va):
