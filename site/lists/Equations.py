@@ -7,13 +7,14 @@ mechanicsVars = {
     	"dipslacement" : "d",
     	"height" : "hi"
     	"time" : "t",
+	"length" : "l",
     	"velocity" : "v",
     	"initial velocity" : "vi",
     	"final velocity" : "vf",
     	"average velocity" : "va",
     	"acceleration" : "a",
 	"plancks constant" : "h",
-	"angle" : "theta"
+	"angle" : "theta" # degrees 
 	"mass" : "m",
 	"gravity" : "g", # at surface
 	"momentum" : "p",
@@ -55,8 +56,21 @@ mechanicsVars = {
 	"first mass" : "m1", # multibody
 	"second mass" : "m1",
 	"spring constant" : "ks"
-	
-
+	"frequency" : "f",
+	"density" : "den",
+	"volume" : "vol",
+	"pressure" : "pr",
+	"area" : "area",
+	"wavelength" : "lam",
+	"index of refraction" : "n",
+	"incident n" : "ni",
+	"transmitted n" : "nt",
+	"incident theta" : "thetai",
+	"transmitted theta" : "thetat",
+	"focal length" : "fok",
+	"distance to object" : "obd",
+	"distance to image" : "imd",
+	"radius of curvature" : "rcur",
 }
 
 
@@ -278,6 +292,57 @@ def springpotentiale(ps,d,ks):
     return ps
 
 def sho(tt,m,ks):
-    ps = (1/2)ks*d**2
-    return ps
-	
+    tt = 2*pi*sqrt(m/ks)
+    return tt
+
+def simplependulum(tt,g,l):
+    tt = 2*pi*sqrt(l/g)
+    return tt
+
+def frequency(tt):
+    f = 1/tt
+    return f
+
+def frequencyangular(f):
+    w = 2*pi*f
+    return w
+
+def density(m,vol):
+    den = m/vol
+    return den
+
+def pressure(ff,area):
+    pr = ff/area
+    return pr
+
+def velocityfrequency(f,v,lam):
+    v = f/lam
+    return v
+
+def interferencewave(n,d,lam,theta):
+    lam = d*sin(theta)/n
+    return lam
+
+def indexofn(n,v):
+    n = c/v
+    return n
+
+def goodoldsnelli(ni,nt,thetai,thetat):
+    ni = nf*sin(thetat) / sin(thetai)
+    return ni
+
+def criticalangle(thetac,ni,nt):
+    thetac = math.asin(nt/ni) # issue with rewrite
+    return thetac
+
+def criticalangle(thetac,ni,nt):
+    thetac = math.asin(nt/ni)
+    return thetac
+
+def images(obd,imd,fok):
+    fok = obd*imd / (imd + obd)
+    return fok	
+
+def focalsphere(fok,rcur):
+    fok = rcur/2
+    return fok
