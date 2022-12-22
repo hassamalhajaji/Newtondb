@@ -288,7 +288,7 @@ def springforce(fsp,ks,d):
     return fsp
 
 def springpotentiale(ps,d,ks):
-    ps = (1/2)ks*d**2
+    ps = (1/2)*ks*d**2
     return ps
 
 def sho(tt,m,ks):
