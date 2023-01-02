@@ -1,1 +1,3 @@
-# NewtonDB: A physics text-to-solution problem solver.
+NewtonDB: A physics text-to-solution problem solver.
+
+(Least comman dinominator) approach to solving physical systems. With a set of (given) values, finds path of least resistance to (unknown) value. 
